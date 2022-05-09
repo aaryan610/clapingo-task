@@ -15,11 +15,6 @@ const mainComponent = () => {
     <React.Fragment>
       <Router>
         <Routes>
-          {/* <Route path="/" element={<Dashboard />}>
-            <Route index element={<Dashboard />} />
-            <Route path="login" element={<Login />} />
-            <Route path="profile" element={<Profile />} />
-          </Route> */}
           <Route path="" element={<Dashboard />} />
           <Route path="/" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
