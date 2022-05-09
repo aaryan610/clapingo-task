@@ -1,0 +1,221 @@
+.container {
+  section {
+    padding: 3rem 10vw;
+  }
+
+  .hero-section {
+    display: grid;
+    grid-template-columns: 55% 45%;
+
+    .content {
+      .heading {
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
+
+      .text {
+        font-weight: 500;
+        margin: 1.5rem 0 3rem;
+      }
+
+      .buttons {
+        a {
+          font-size: 0.9rem;
+
+          &:not(:first-child) {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .image {
+      padding-left: 5vw;
+      display: grid;
+      place-items: center;
+
+      .box {
+        border: 1px solid #000;
+        height: 80%;
+        width: 100%;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .stats-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    padding: 3rem 0;
+
+    .stats {
+      background: linear-gradient(
+        90deg,
+        #00d2ff -13.02%,
+        rgba(0, 210, 255, 0) 103.77%
+      );
+      padding: 80px 0 80px 10vw;
+
+      .stats-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem;
+
+        .top,
+        .bottom {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1.5rem;
+
+          .single-card {
+            background-color: #3a3636;
+            border-radius: 12px;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+
+            .number {
+              font-size: 2rem;
+              font-weight: 500;
+            }
+
+            .title {
+              font-size: 1rem;
+              font-weight: 300;
+            }
+          }
+        }
+
+        .bottom {
+          transform: translateX(1.5rem);
+        }
+      }
+    }
+
+    .content {
+      padding-right: 10vw;
+
+      .subheading {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .heading {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .text {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .offer-section {
+    .heading {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 0 3rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+
+      .single-card {
+        position: relative;
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+
+        .content {
+          position: absolute;
+          background: linear-gradient(
+            180deg,
+            rgba(196, 196, 196, 0) -14.34%,
+            #c4c4c4 116.43%
+          );
+          backdrop-filter: blur(65px);
+          max-width: 100%;
+          bottom: 0;
+          left: 0;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          padding: 20px;
+          height: 150px;
+
+          .title {
+            color: #00d2ff;
+          }
+
+          .text {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .how-section {
+    .heading {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0 0 3rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr;
+      grid-gap: 5rem;
+
+      .cards {
+        .single-card {
+          box-shadow: 26px 26px 23px rgba(204, 210, 212, 0.36);
+          border-radius: 12px;
+          border-top: 1px solid #99a5a9;
+          border-left: 1px solid #99a5a9;
+          padding: 15px;
+
+          .text {
+            color: #808f93;
+          }
+
+          &:last-child {
+            margin-top: 4rem;
+          }
+        }
+      }
+
+      .mobile {
+        position: relative;
+        display: grid;
+        place-items: center;
+
+        img {
+          width: 100%;
+        }
+
+        .ellipse {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #139980;
+          box-shadow: 10px 10px 100px 5px #139980, -10px -10px 100px 5px #139980;
+          height: 50%;
+          width: 50%;
+          border-radius: 50%;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

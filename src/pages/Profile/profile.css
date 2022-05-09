@@ -1,0 +1,21 @@
+.profile-container .hero-section {
+  padding: 3rem 10vw;
+}
+
+.profile-container .hero-section .content {
+  text-align: center;
+}
+
+.profile-container .hero-section .content .heading {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.profile-container .hero-section .content .buttons {
+  margin-top: 3rem;
+}
+
+.profile-container .hero-section .content .buttons a {
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,22 @@
+.profile-container {
+  .hero-section {
+    padding: 3rem 10vw;
+
+    .content {
+      text-align: center;
+
+      .heading {
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
+
+      .buttons {
+        margin-top: 3rem;
+
+        a {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
