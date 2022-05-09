@@ -1,7 +1,7 @@
 import React from "react";
 
 //Common Components
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //End Common Components
 
 // Pages
@@ -13,9 +13,19 @@ import Profile from "../pages/Profile/index";
 const mainComponent = () => {
   return (
     <React.Fragment>
-      <Dashboard />
-      {/* <Login /> */}
-      {/* <Profile /> */}
+      <Router>
+        <Routes>
+          {/* <Route path="/" element={<Dashboard />}>
+            <Route index element={<Dashboard />} />
+            <Route path="login" element={<Login />} />
+            <Route path="profile" element={<Profile />} />
+          </Route> */}
+          <Route path="" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </Router>
     </React.Fragment>
   );
 };

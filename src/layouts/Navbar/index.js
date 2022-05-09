@@ -5,11 +5,13 @@ const navbar = () => {
   return (
     <React.Fragment>
       <nav>
-        <img
-          src="./assets/images/logo.png"
-          className="logo"
-          alt="Clapingo Logo"
-        />
+        <a href="/">
+          <img
+            src="./assets/images/logo.png"
+            className="logo"
+            alt="Clapingo Logo"
+          />
+        </a>
         <div className="links">
           <a href="#">Plans & Pricing</a>
           <a href="#">Teach with us</a>

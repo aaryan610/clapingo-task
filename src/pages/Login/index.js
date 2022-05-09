@@ -24,7 +24,7 @@ const Login = () => {
         localStorage.setItem("User Id", userId);
         localStorage.setItem("Password", password);
 
-        window.location.reload(false);
+        navigate("/");
       }
     }
   };

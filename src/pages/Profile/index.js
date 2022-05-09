@@ -1,11 +1,16 @@
 import React from "react";
 import Navbar from "../../layouts/Navbar/index";
 import "./profile.css";
+import { useNavigate } from "react-router-dom";
 
-const profile = () => {
+const Profile = () => {
+  let navigate = useNavigate();
+
   const handeLogOut = () => {
     localStorage.setItem("User Id", null);
     localStorage.setItem("Password", null);
+
+    navigate("/");
   };
 
   return (
@@ -33,4 +38,4 @@ const profile = () => {
   );
 };
 
-export default profile;
+export default Profile;
